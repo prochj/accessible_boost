@@ -1,0 +1,48 @@
+@import "boost";
+
+#block-region-side-pre,
+#block-region-side-post,
+.header,
+.footer,
+.navbar,
+.breadcrumb,
+#page-footer {
+  display: none !important;
+}
+
+#region-main {
+  width: 100% !important;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #000;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+  font-size: 1.2rem;
+  padding: 0.6em 1.2em;
+  border-radius: 0.5em;
+  background-color: #005fcc;
+  color: #fff;
+  border: none;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #003f8c;
+}
+
+*:focus {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+  background-color: #eef6ff;
+}
+
+body {
+  overflow-x: hidden;
+}
