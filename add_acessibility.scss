@@ -1,0 +1,89 @@
+
+https://piskoviste.it.pedf.cuni.cz/admin/settings.php?section=themesettingboost
+
+
+/* === Přístupné rozhraní pro testy === */
+
+/* Skrytí bočních bloků, záhlaví a patičky */
+#block-region-side-pre,
+#block-region-side-post,
+.header, 
+.footer, 
+.navbar,
+.breadcrumb,
+.drawerheader,
+.drawer,
+.drawer-toggles ,
+#responseform .info,
+#page-footer {
+  display: none !important;
+}
+
+/* Rozšíření hlavního obsahu */
+#region-main {
+  width: 100% !important;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Větší, přístupnější tlačítka */
+input[type="submit"],
+input[type="button"],
+button {
+  font-size: 1.2rem;
+  padding: 0.6em 1.2em;
+  border-radius: 0.5em;
+  background-color: #005fcc;
+  color: #fff;
+  border: none;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #003f8c;
+}
+
+/* Zvýraznění prvku s fokusem – pro lepší orientaci klávesnicí */
+*:focus {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+  background-color: #eef6ff;
+}
+
+/* Přístupnější formuláře */
+input[type="text"],
+input[type="radio"],
+input[type="checkbox"],
+textarea,
+select {
+  font-size: 1.1rem;
+  margin: 0.3rem 0;
+}
+
+/* Zamezení horizontálnímu posouvání */
+body {
+  overflow-x: hidden;
+}
+
+/* Přizpůsobení testového rozhraní */
+.path-mod-quiz .quizattempt {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+/* Skrytí nepotřebných ikon */
+.activityicon,
+.editing_title,
+.editing_move,
+.commands,
+.action-menu,
+.path-mod-quiz .contentafterlink {
+  display: none !important;
+}
+
