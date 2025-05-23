@@ -10,16 +10,35 @@ $THEME->scss = function($theme) {
 $THEME->plugins_exclude_sheets = ['boost'];
 $THEME->usefallback = true;
 $THEME->layouts = [
-    'standard' => [
+    'base' => array(
         'file' => 'columns2.php',
-        'regions' => ['side-pre'],
-        'defaultregion' => 'side-pre',
-    ],
-    'course' => [
+        'regions' => array(),
+    ),
+    'standard' => array(
         'file' => 'columns2.php',
-        'regions' => ['side-pre'],
+        'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
-    ],
+    ),
+    'course' => array(
+        'file' => 'columns2.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+    ),
+    'incourse' => array(
+        'file' => 'columns2.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+    ),
+    'admin' => array(
+        'file' => 'columns2.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+    ),
+    'mydashboard' => array(
+        'file' => 'columns2.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+    ),
 ];
 $THEME->enable_dock = false;
 $THEME->csspostprocess = null;
