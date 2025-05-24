@@ -10,14 +10,13 @@ if ($hasblocks) {
 <html <?= $OUTPUT->htmlattributes() ?>>
 <head>
     <title><?= $OUTPUT->page_title() ?></title>
-    <?= $OUTPUT->standard_head_html() ?>
+    <?= $OUTPUT->standard_head_html() ?>   
 </head>
 <body <?= $OUTPUT->body_attributes($bodyclasses) ?>>
-
     <?= $OUTPUT->standard_top_of_body_html() ?>
 
     <header class="header">
-        <div class="container">
+              <div class="container">
             <?= $OUTPUT->context_header() ?>
             <?= $OUTPUT->login_info() ?>
         </div>
@@ -25,6 +24,7 @@ if ($hasblocks) {
 
     <div id="page" class="container">
         <main id="region-main" class="maincontent" role="main">
+            <h1>region-main</h1>
             <?= $OUTPUT->main_content() ?>
         </main>
 
@@ -36,6 +36,7 @@ if ($hasblocks) {
     </div>
 
     <footer id="page-footer">
+        <h1>page-footer</h1>
         <?= $OUTPUT->standard_footer_html() ?>
     </footer>
 

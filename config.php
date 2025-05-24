@@ -9,6 +9,7 @@ $THEME->scss = function($theme) {
 };
 $THEME->plugins_exclude_sheets = ['boost'];
 $THEME->usefallback = true;
+$THEME->haseditswitch = false;
 $THEME->layouts = [
     'base' => array(
         'file' => 'columns2.php',

@@ -1,4 +1,18 @@
 @import "boost";
+
+h1 {color: blue;}
+
+body {
+    background-color: #ffdddd !important;
+}
+
+.qtype_multichoice_clearchoice {
+    display: none !important;
+}
+/* 
+Fix the following:
+Focusable content should be disabled or be removed from the DOM */
+
 /*
 #block-region-side-pre,
 #block-region-side-post,
