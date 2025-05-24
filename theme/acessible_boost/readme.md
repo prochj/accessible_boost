@@ -1,1 +1,0 @@
-New location of theme
